@@ -1,0 +1,275 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>A to Z Clones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <div class="flex items-center">
+                <img alt="A to Z Clones Logo" class="h-10" height="50" src="https://storage.googleapis.com/a1aa/image/rKHAQ5vC2FDxYQzb78AM_m03i--Bgu6vB34EBHFAt88.jpg" width="100" />
+                <div class="ml-4">
+                    <input class="px-4 py-2 rounded w-96" placeholder="Search" type="text" />
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a class="hover:underline" href="#" onclick="showLoginForm()">Hello, Sign in</a>
+                <a class="hover:underline" href="#">Returns &amp; Orders</a>
+                <a class="hover:underline" href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="bg-gray-700 text-white">
+        <div class="container mx-auto flex items-center space-x-4 py-2 px-6">
+            <a class="hover:underline" href="#">All</a>
+            <a class="hover:underline" href="#">Today's Deals</a>
+            <a class="hover:underline" href="#">Customer Service</a>
+            <a class="hover:underline" href="#">Gift Cards</a>
+            <a class="hover:underline" href="#">Registry</a>
+            <a class="hover:underline" href="#">Sell</a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="container mx-auto py-6 px-6">
+        <!-- Hero Section -->
+        <section class="mb-8">
+            <img alt="Hero Image showing a promotional banner with various products" height="400" src="https://storage.googleapis.com/a1aa/image/RiUzqHp0FNg2th7W7LnESvlmPTr0TxnHYYbGUPzLBGA.jpg" width="1200" />
+        </section>
+        <!-- Product Categories -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Shop by Category</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Category image for Electronics" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/BLnqTHevF5n_zb9HEY8vED1sU6JYEWYfKNhPoUXUOOY.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Electronics</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Category image for Fashion" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/5igWTOuuNS2h8apanORtVIEIXBiPrMebwgQQ8wZojK4.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Fashion</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Category image for Home and Kitchen" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/i_h9ROKHM7xlhmw4qcL6_iiBsHiQo2eXEOkZRyzeWWQ.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Home &amp; Kitchen</h3>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Category image for Beauty" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/qAshWNqj3-KA8IFfST2UX8E_NuDyvCC_IDkO82zSyvc.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Beauty</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Products -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Featured Products</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="featured-products">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+        <!-- Best Sellers -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">Best Sellers</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Image of Best Seller 1" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/Td6-j9Fk-0ImwH8wjKdiSs01SaS_ixOis4g72S-383o.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Best Seller 1</h3>
+                    <p class="text-gray-700">$59.99</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Image of Best Seller 2" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/2dju7wbsv1FZJpz5KkQNk0kusrglqQDwIZg2PfxywG0.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Best Seller 2</h3>
+                    <p class="text-gray-700">$69.99</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Image of Best Seller 3" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/1QuVW6rbQwOeT0TASUp_LGTxHyaiihP7bC8x3_3_KeM.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Best Seller 3</h3>
+                    <p class="text-gray-700">$79.99</p>
+                </div>
+                <div class="bg-white p-4 rounded shadow">
+                    <img alt="Image of Best Seller 4" class="mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/udRICjF3zG9IIgx3iEzUYH16r0OS76inHfz0pe-fUx4.jpg" width="200" />
+                    <h3 class="text-lg font-semibold">Best Seller 4</h3>
+                    <p class="text-gray-700">$89.99</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Get to Know Us</h3>
+                    <ul>
+                        <li><a class="hover:underline" href="#">About Us</a></li>
+                        <li><a class="hover:underline" href="#">Careers</a></li>
+                        <li><a class="hover:underline" href="#">Press Releases</a></li>
+                        <li><a class="hover:underline" href="#">A to Z Clones Cares</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Make Money with Us</h3>
+                    <ul>
+                        <li><a class="hover:underline" href="#">Sell on A to Z Clones</a></li>
+                        <li><a class="hover:underline" href="#">Sell Under A to Z Clones Accelerator</a></li>
+                        <li><a class="hover:underline" href="#">A to Z Clones Global Selling</a></li>
+                        <li><a class="hover:underline" href="#">Become an Affiliate</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">A to Z Clones Payment Products</h3>
+                    <ul>
+                        <li><a class="hover:underline" href="#">A to Z Clones Rewards Visa Signature Cards</a></li>
+                        <li><a class="hover:underline" href="#">A to Z Clones Store Card</a></li>
+                        <li><a class="hover:underline" href="#">A to Z Clones Business Card</a></li>
+                        <li><a class="hover:underline" href="#">A to Z Clones Business Line of Credit</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Let Us Help You</h3>
+                    <ul>
+                        <li><a class="hover:underline" href="#">A to Z Clones and COVID-19</a></li>
+                        <li><a class="hover:underline" href="#">Your Account</a></li>
+                        <li><a class="hover:underline" href="#">Your Orders</a></li>
+                        <li><a class="hover:underline" href="#">Shipping Rates &amp; Policies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="login-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded shadow-lg w-96">
+            <h2 class="text-2xl font-bold mb-4">Login</h2>
+            <form id="login-form">
+                <div class="mb-4">
+                    <label class="block text-gray-700">Username</label>
+                    <input class="w-full px-4 py-2 border rounded" type="text" id="login-username" required/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Password</label>
+                    <input class="w-full px-4 py-2 border rounded" type="password" id="login-password" required/>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Login</button>
+                <button class="bg-gray-500 text-white px-4 py-2 rounded ml-2" type="button" onclick="hideLoginForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="register-modal" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+        <div class="bg-white p-6 rounded shadow-lg w-96">
+            <h2 class="text-2xl font-bold mb-4">Register</h2>
+            <form id="register-form">
+                <div class="mb-4">
+                    <label class="block text-gray-700">Username</label>
+                    <input class="w-full px-4 py-2 border rounded" type="text" id="register-username" required/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700">Password</label>
+                    <input class="w-full px-4 py-2 border rounded" type="password" id="register-password" required/>
+                </div>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded" type="submit">Register</button>
+                <button class="bg-gray-500 text-white px-4 py-2 rounded ml-2" type="button" onclick="hideRegisterForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function showLoginForm() {
+            document.getElementById('login-modal').classList.remove('hidden');
+        }
+
+        function hideLoginForm() {
+            document.getElementById('login-modal').classList.add('hidden');
+        }
+
+        function showRegisterForm() {
+            document.getElementById('register-modal').classList.remove('hidden');
+        }
+
+        function hideRegisterForm() {
+            document.getElementById('register-modal').classList.add('hidden');
+        }
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('login-username').value;
+            const password = document.getElementById('login-password').value;
+
+            fetch('http://localhost:3000/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username,
+                        password
+                    })
+                })
+                .then(response => response.text())
+                .then(data => {
+                    alert(data);
+                    hideLoginForm();
+                })
+                .catch(error => console.error('Error:', error));
+        });
+
+        document.getElementById('register-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('register-username').value;
+            const password = document.getElementById('register-password').value;
+
+            fetch('http://localhost:3000/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        username,
+                        password
+                    })
+                })
+                .then(response => response.text())
+                .then(data => {
+                    alert(data);
+                    hideRegisterForm();
+                })
+                .catch(error => console.error('Error:', error));
+        });
+
+        function loadProducts() {
+            fetch('http://localhost:3000/products')
+                .then(response => response.json())
+                .then(products => {
+                    const productsContainer = document.getElementById('featured-products');
+                    productsContainer.innerHTML = '';
+                    products.forEach(product => {
+                        const productElement = document.createElement('div');
+                        productElement.classList.add('bg-white', 'p-4', 'rounded', 'shadow');
+                        productElement.innerHTML = `
+                        <img alt="Image of ${product.name}" class="mb-4" height="200" src="https://placehold.co/200x200" width="200"/>
+                        <h3 class="text-lg font-semibold">${product.name}</h3>
+                        <p class="text-gray-700">$${product.price}</p>
+                    `;
+                        productsContainer.appendChild(productElement);
+                    });
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        document.addEventListener('DOMContentLoaded', loadProducts);
+    </script>
+</body>
+
+</html>
